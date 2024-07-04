@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#3F51B5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="17dp"
+    tools:context=".MainActivity">
+.
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Questions"
+        android:textColor="#D7ED02"
+        android:textSize="27dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/choices_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "This is your question"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:id="@+id/question_text"
+            android:layout_above="@+id/choices_layout"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:backgroundTint="@color/white"
+            android:text="Answer A"
+            android:textColor="@color/black"
+            android:id="@+id/Ans_A"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:backgroundTint="@color/white"
+            android:text="Answer B"
+            android:textColor="@color/black"
+            android:id="@+id/Ans_B"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:backgroundTint="@color/white"
+            android:text="Answer C"
+            android:textColor="@color/black"
+            android:id="@+id/Ans_C"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/restart_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF9800"
+        android:text="Restart Quiz"
+        android:enabled="false"/>
+
+</RelativeLayout>
